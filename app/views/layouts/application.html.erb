@@ -49,9 +49,47 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <section class="container">
+
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">SPASON</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sok</a></li>
+            <li><a href="#">Konferens</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Mer</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="top-menu">
+
+    </div>
+  </header>
+
+  <article class="container">
     <%= yield %>
-  </section>
+  </article>
+
+  <article class="packages">
+  </article>
+
+  <article class="other-spas">
+  </article>
+
+  <footer>
+  </footer>
 
 </body>
 </html>
