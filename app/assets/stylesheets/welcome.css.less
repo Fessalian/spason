@@ -1,14 +1,60 @@
 .content-container {
   background-color: #FFFFFF;
+  border-radius: 5px;
   padding: 30px;
   margin: 30px 0;
+
+  div {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  a {
+    .btn {
+      margin: auto;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 50px;
+      color: #FFC600;
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  &.show-google-maps {
+    span {
+      color: #FF471B;
+      font-size: 42px;
+      position: relative;
+      top: 10px;
+    }
+  }
+
 }
 
+.description {
+  > div{
+    text-align: center;
+  }
+}
 .image-container {
+  border-radius: 5px;
   margin-top: 30px;
+  overflow: hidden;
 
   #myImageCarousel {
     height: 500px;
+  }
+
+  .glyphicon {
+    font-size: 36px;
   }
 }
 
@@ -16,4 +62,20 @@
   border-radius: 100px;
   width: 30%;
   overflow: hidden;
+}
+
+.feedback {
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: #FFFFFF transparent transparent transparent;
+    position: absolute;
+    bottom: -12%;
+    right: 22%;
+  }
 }
