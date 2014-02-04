@@ -2,13 +2,56 @@
 <html>
 <head>
   <title>Spason</title>
+  <meta name="description" content="Something about our site">
+  <meta name="keywords" content="our keywords for robots">
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="imagetoolbar" content="no" />
+
+  <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-startup-image" href="/startup.png" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(Duration=0.2)" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <meta name="robots" content="all" />
+
+  <link rel="copyright" href="" />
+  <link rel="author" href="" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"  />
+  <link rel="apple-touch-icon" href="/apple-touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-ipad.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-iphone4.png" />
+
+  <!--[if IE]>
+  <script type="text/javascript">
+    //<![CDATA[
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('author');
+    document.createElement('aside');
+    document.createElement('footer');
+  //]]>
+  </script>
+  <![endif]-->
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <section class="container">
+    <%= yield %>
+  </section>
 
 </body>
 </html>
