@@ -38,12 +38,58 @@ nav {
 }
 
 .top-menu {
+  padding-top: 20px;
+
+  > div {
+    font-size: 24px;
+    margin-top: 10px;
+
+    span {
+      color: #2185C5;
+    }
+  }
+
   li {
-    a {
+    text-align: center;
+
+    &:nth-child(1) {
+      width: 18%;
+    }
+    &:nth-child(2) {
+      width: 13%;
+    }
+    &:nth-child(3) {
+      width: 13%;
+    }
+    &:nth-child(4) {
+      width: 20%;
+    }
+    &:nth-child(5) {
+      width: 20%;
+    }
+    &:nth-child(6) {
+      width: 15%;
+    }
+
+     a {
+
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+
       &:hover, &.active {
         background-color: transparent !important;
         color: #2185C5;
         font-weight: bold;
+      }
+      &.btn {
+        padding: 5px 15px;
+        margin-top: 10px;
+
+        &:hover {
+          color: #FFFFFF;
+          background-color: #398439 !important;
+          font-weight: normal;
+        }
       }
     }
   }
