@@ -81,11 +81,11 @@
         <div class="col-lg-5"><span class="glyphicon glyphicon-map-marker"></span>Hotel name, Location</div>
 
         <ul class="nav navbar-nav navbar-right col-lg-7">
-          <li><a href="/" class="active">Highlights</a></li>
+          <li><a href="/" class='<%= controller.controller_name == "welcome" ? "active" : "" %>'>Highlights</a></li>
           <li><a href="#">Spa</a></li>
           <li><a href="#">Hotel</a></li>
           <li><a href="#">Eat & Drinc</a></li>
-          <li><a href="/boring_info">Boring info</a></li>
+          <li><a href="/boring_info" class='<%= controller.controller_name == "boring_info" ? "active" : "" %>'>Boring info</a></li>
           <li><a href="#" class="btn btn-success">Book</a></li>
         </ul>
       </div>
